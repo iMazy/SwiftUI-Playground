@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642F32B4285D7E43002752C7 /* ImageTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F32B3285D7E43002752C7 /* ImageTutorial.swift */; };
+		642F32BA285D8101002752C7 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 642F32B9285D8101002752C7 /* Resources.bundle */; };
 		6438005E285D568F007852F9 /* TextTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438005D285D568F007852F9 /* TextTutorial.swift */; };
 		64380060285D6258007852F9 /* ButtonTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438005F285D6258007852F9 /* ButtonTutorial.swift */; };
 		64380062285D7260007852F9 /* TextFieldTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64380061285D7260007852F9 /* TextFieldTutorial.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		642F32B3285D7E43002752C7 /* ImageTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTutorial.swift; sourceTree = "<group>"; };
+		642F32B9285D8101002752C7 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
 		6438005D285D568F007852F9 /* TextTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTutorial.swift; sourceTree = "<group>"; };
 		6438005F285D6258007852F9 /* ButtonTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTutorial.swift; sourceTree = "<group>"; };
 		64380061285D7260007852F9 /* TextFieldTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTutorial.swift; sourceTree = "<group>"; };
@@ -62,7 +66,9 @@
 				6438005D285D568F007852F9 /* TextTutorial.swift */,
 				6438005F285D6258007852F9 /* ButtonTutorial.swift */,
 				64380061285D7260007852F9 /* TextFieldTutorial.swift */,
+				642F32B3285D7E43002752C7 /* ImageTutorial.swift */,
 				64C54267285C300700F59CA2 /* Assets.xcassets */,
+				642F32B9285D8101002752C7 /* Resources.bundle */,
 				64C54269285C300700F59CA2 /* Preview Content */,
 			);
 			path = SwiftUIBase;
@@ -135,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64C5426B285C300700F59CA2 /* Preview Assets.xcassets in Resources */,
+				642F32BA285D8101002752C7 /* Resources.bundle in Resources */,
 				64C54268285C300700F59CA2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +156,7 @@
 				64C54266285C300500F59CA2 /* ContentView.swift in Sources */,
 				6438005E285D568F007852F9 /* TextTutorial.swift in Sources */,
 				64380062285D7260007852F9 /* TextFieldTutorial.swift in Sources */,
+				642F32B4285D7E43002752C7 /* ImageTutorial.swift in Sources */,
 				64C54264285C300500F59CA2 /* SwiftUIBaseApp.swift in Sources */,
 				64380060285D6258007852F9 /* ButtonTutorial.swift in Sources */,
 			);
