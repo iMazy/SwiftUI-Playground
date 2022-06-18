@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6438005E285D568F007852F9 /* TextTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438005D285D568F007852F9 /* TextTutorial.swift */; };
 		64380060285D6258007852F9 /* ButtonTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6438005F285D6258007852F9 /* ButtonTutorial.swift */; };
+		64380062285D7260007852F9 /* TextFieldTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64380061285D7260007852F9 /* TextFieldTutorial.swift */; };
 		64C54264285C300500F59CA2 /* SwiftUIBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C54263285C300500F59CA2 /* SwiftUIBaseApp.swift */; };
 		64C54266285C300500F59CA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C54265285C300500F59CA2 /* ContentView.swift */; };
 		64C54268285C300700F59CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C54267285C300700F59CA2 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		6438005D285D568F007852F9 /* TextTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTutorial.swift; sourceTree = "<group>"; };
 		6438005F285D6258007852F9 /* ButtonTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTutorial.swift; sourceTree = "<group>"; };
+		64380061285D7260007852F9 /* TextFieldTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTutorial.swift; sourceTree = "<group>"; };
 		64C54260285C300500F59CA2 /* SwiftUIBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C54263285C300500F59CA2 /* SwiftUIBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBaseApp.swift; sourceTree = "<group>"; };
 		64C54265285C300500F59CA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				64C54265285C300500F59CA2 /* ContentView.swift */,
 				6438005D285D568F007852F9 /* TextTutorial.swift */,
 				6438005F285D6258007852F9 /* ButtonTutorial.swift */,
+				64380061285D7260007852F9 /* TextFieldTutorial.swift */,
 				64C54267285C300700F59CA2 /* Assets.xcassets */,
 				64C54269285C300700F59CA2 /* Preview Content */,
 			);
@@ -145,6 +148,7 @@
 			files = (
 				64C54266285C300500F59CA2 /* ContentView.swift in Sources */,
 				6438005E285D568F007852F9 /* TextTutorial.swift in Sources */,
+				64380062285D7260007852F9 /* TextFieldTutorial.swift in Sources */,
 				64C54264285C300500F59CA2 /* SwiftUIBaseApp.swift in Sources */,
 				64380060285D6258007852F9 /* ButtonTutorial.swift in Sources */,
 			);
