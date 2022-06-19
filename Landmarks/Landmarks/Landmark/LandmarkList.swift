@@ -31,7 +31,10 @@ struct LandmarkList: View {
                         LandmarkRow(landmark: landmark)
                     }
                 }
+                .listRowSeparator(.hidden)
+//                .listRowInsets(EdgeInsets())
             }
+            .listStyle(PlainListStyle())
             .navigationTitle(Text("Landmarks"))
         }
         .ignoresSafeArea(.all)
