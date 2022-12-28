@@ -157,8 +157,10 @@ struct TextTutorial: View {
     /// MARK: - Localized
     var localizedStr: some View {
         VStack {
-            Text("pencil")
+            Text("365")
+                .tracking(1)
             Text(verbatim: "pencil")
+                .kerning(1)
             Text(LocalizedStringKey("pencil"))
         }
     }
