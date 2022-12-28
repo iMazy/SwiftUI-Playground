@@ -16,6 +16,7 @@
 		64C54266285C300500F59CA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C54265285C300500F59CA2 /* ContentView.swift */; };
 		64C54268285C300700F59CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C54267285C300700F59CA2 /* Assets.xcassets */; };
 		64C5426B285C300700F59CA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C5426A285C300700F59CA2 /* Preview Assets.xcassets */; };
+		A4465DBB295C122500962945 /* LabelTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4465DBA295C122500962945 /* LabelTutorial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		64C54265285C300500F59CA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64C54267285C300700F59CA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C5426A285C300700F59CA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A4465DBA295C122500962945 /* LabelTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTutorial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				6438005D285D568F007852F9 /* TextTutorial.swift */,
 				6438005F285D6258007852F9 /* ButtonTutorial.swift */,
 				64380061285D7260007852F9 /* TextFieldTutorial.swift */,
+				A4465DBA295C122500962945 /* LabelTutorial.swift */,
 				642F32B3285D7E43002752C7 /* ImageTutorial.swift */,
 				64C54267285C300700F59CA2 /* Assets.xcassets */,
 				642F32B9285D8101002752C7 /* Resources.bundle */,
@@ -157,6 +160,7 @@
 				6438005E285D568F007852F9 /* TextTutorial.swift in Sources */,
 				64380062285D7260007852F9 /* TextFieldTutorial.swift in Sources */,
 				642F32B4285D7E43002752C7 /* ImageTutorial.swift in Sources */,
+				A4465DBB295C122500962945 /* LabelTutorial.swift in Sources */,
 				64C54264285C300500F59CA2 /* SwiftUIBaseApp.swift in Sources */,
 				64380060285D6258007852F9 /* ButtonTutorial.swift in Sources */,
 			);

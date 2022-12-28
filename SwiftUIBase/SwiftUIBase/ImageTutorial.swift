@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ImageTutorial: View {
     var body: some View {
-        imageScale
+        shapeTrim
     }
     
     /// MARK: - 1.Intro
@@ -159,6 +159,29 @@ struct ImageTutorial: View {
                     .imageScale(.large)
                 Text("large")
             }
+        }
+    }
+    
+    var shapeTrim: some View {
+        VStack {
+            Image("dog")
+                .resizable()
+                .scaledToFit()
+//                .clipShape(Rectangle().trim(from: 0, to: 0.6))
+            
+//                .clipShape{
+//                    RoundedRectangle(cornerRadius: 10)
+//                        .trim(from: 0, to: 0.5)
+//                        .stroke(.red, lineWidth: 20)
+//                        .frame(width: 200, height: 120)
+//                }
+            //    .trim(from: 0, to: 0.5)
+            
+//            RoundedRectangle(cornerRadius: 10)
+//                .trim(from: 0, to: 0.5)
+//                .stroke(.red, lineWidth: 20)
+//                .frame(width: 200, height: 20)
+//                .rotationEffect(.degrees(-90))
         }
     }
 }

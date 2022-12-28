@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TextTutorial: View {
     var body: some View {
-        localizedStr
+        linksText
     }
     
     /// MARK: - Intro
@@ -163,6 +163,137 @@ struct TextTutorial: View {
                 .kerning(1)
             Text(LocalizedStringKey("pencil"))
         }
+    }
+    
+    /// Text with AttributedString
+    var attributedText: some View {
+        var message: AttributedString {
+            var result = AttributedString("Hello, world!")
+            result.font = .largeTitle
+            result.foregroundColor = .white
+            result.backgroundColor = .red
+            return result
+        }
+        
+        var underlineMessage: AttributedString {
+            var result = AttributedString("Testing")
+            result.font = .largeTitle
+            result.foregroundColor = .white
+            result.backgroundColor = .blue
+            result.underlineStyle = Text.LineStyle(pattern: .solid, color: .white)
+            return result
+        }
+        
+        var message1: AttributedString {
+            let string = "The letters go up and down"
+            var result = AttributedString()
+            
+            for (index, letter) in string.enumerated() {
+                var letterString = AttributedString(String(letter))
+                letterString.baselineOffset = sin(Double(index)) * 5
+                result += letterString
+            }
+            
+            result.font = .largeTitle
+            return result
+        }
+        
+        var linkMessage: AttributedString {
+            var result = AttributedString("Learn Swift here")
+            result.font = .largeTitle
+            result.link = URL(string: "https://www.hackingwithswift.com")
+            return result
+        }
+        
+        var passwordMessage: AttributedString {
+            var password = AttributedString("abCayer-muQai")
+            password.accessibilitySpeechSpellsOutCharacters = true
+            return "Your password is: " + password
+        }
+        
+        var dayMessage: AttributedString {
+             var result = Date.now.formatted(.dateTime.weekday(.wide).day().month(.wide).attributed)
+             result.foregroundColor = .secondary
+
+             let weekday = AttributeContainer.dateField(.weekday)
+             let weekdayStyling = AttributeContainer.foregroundColor(.primary)
+             result.replaceAttributes(weekday, with: weekdayStyling)
+
+             return result
+         }
+        
+        var personNameMessage: AttributedString {
+            var components = PersonNameComponents()
+            components.givenName = "Taylor"
+            components.familyName = "Swift"
+            
+            var result = components.formatted(.name(style: .long).attributed)
+            
+            let familyNameStyling = AttributeContainer.font(.headline)
+            let familyName = AttributeContainer.personNameComponent(.familyName)
+            result.replaceAttributes(familyName, with: familyNameStyling)
+            
+            return result
+        }
+
+        var kilometersMessage: AttributedString {
+            var amount = Measurement(value: 200, unit: UnitLength.kilometers)
+            var result = amount.formatted(.measurement(width: .wide).attributed)
+            
+            let distanceStyling = AttributeContainer.font(.title)
+            let distance = AttributeContainer.measurement(.value)
+            result.replaceAttributes(distance, with: distanceStyling)
+            
+            return result
+        }
+        
+        return VStack(spacing: 10) {
+            Text(message + underlineMessage)
+            Text(message1)
+            Text(passwordMessage)
+            Text(dayMessage)
+            Text(personNameMessage)
+            
+            Text(kilometersMessage)
+            
+            Text("This is placeholder text")
+                .font(.title)
+                .redacted(reason: .placeholder)
+            
+            VStack {
+                Text("This Placeholder text")
+                Text("And so is this")
+            }
+            .font(.title)
+            .redacted(reason: .placeholder)
+        }
+    }
+    
+    var markdownText: some View {
+        VStack {
+            Text("This is regular text.")
+            Text("* This is **bold** text, this is *italic* text, and this is ***bold, italic*** text.")
+            Text("~~A strikethrough example~~")
+            Text("`Monospaced works too`")
+            Text("Visit Apple: [click here](https://apple.com)")
+
+        }
+        .padding(5)
+    }
+    
+    var linksText: some View {
+        VStack {
+            Link("Visit Apple Link", destination: URL(string: "https://apple.com")!)
+                .padding()
+            Text("[Visit Apple](https://apple.com)")
+                .tint(.indigo)
+        }
+        .environment(\.openURL, OpenURLAction(handler: handleURL))
+    }
+    
+    func handleURL(_ url: URL) -> OpenURLAction.Result {
+        print("Handle \(url) somehow")
+        return .handled
     }
 }
 
